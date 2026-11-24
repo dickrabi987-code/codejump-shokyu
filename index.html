@@ -36,12 +36,13 @@
         <div class="about-text">
           <p class="about-name">Xxxxx Ashley</p>
           <p class="about-address">
-            2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan
-            <br>
+            2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031
+            Japan
+            <br />
             tel: 000-0000-0000
-            <br>
+            <br />
             url: www.xxxxxx.jp
-            <br>
+            <br />
             mail: xxx@xxxxxx.jp
           </p>
           <p class="about-profile">
@@ -49,13 +50,36 @@
           </p>
         </div>
       </section>
+
       <section id="works">
-        <img src="./images/works1.png" alt="works1" />
-        <img src="./images/works2.png" alt="works1" />
-        <img src="./images/works3.png" alt="works1" />
-        <img src="./images/works4.png" alt="works1" />
-        <img src="./images/works5.png" alt="works1" />
-        <img src="./images/works6.png" alt="works1" />
+        <h2 class="works-title">Works</h2>
+        <div class="works-items">
+          <img src="./images/works1.png" alt="works1" />
+          <img src="./images/works2.png" alt="works2" />
+          <img src="./images/works3.png" alt="works3" />
+          <img src="./images/works4.png" alt="works4" />
+          <img src="./images/works5.png" alt="works5" />
+          <img src="./images/works6.png" alt="works6" />
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="contact-title">Contact</h2>
+        <form action="">
+          <div class="contact-form-row">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="contact-form-row">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="contact-form-row">
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button class="contact-button" type="submit">送信</button>
+        </form>
       </section>
     </main>
   </body>
