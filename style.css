@@ -1,7 +1,15 @@
 body {
-  color: #2b3137;
+  color: #24292e;
 }
-
+.title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+section {
+  padding: 0 4%;
+  max-width: 960px;
+}
 /* header */
 header {
   display: flex;
@@ -19,6 +27,10 @@ header {
   display: flex;
   gap: 30px;
 }
+.header-ul li a img {
+  width: 20px;
+  height: 20px;
+}
 
 /* mv */
 .mv img {
@@ -32,18 +44,12 @@ header {
 /* about */
 #about {
   margin: 80px auto 0;
-  padding: 0 4%;
-  max-width: 960px;
 }
 .about-title {
-  text-align: center;
-  font-weight: 600;
-  font-size: 24px;
   margin-bottom: 65px;
 }
 .about-text {
   font-size: 14.4px;
-  color: #24292e;
   line-height: 22px;
 }
 .about-name {
@@ -53,23 +59,117 @@ header {
   margin-top: 30px;
 }
 
+/* works  */
 #works {
-  padding: 0 4%;
-  max-width: 960px;
   margin: 130px auto 150px;
 }
 .works-title {
-  font-size: 24px;
-  text-align: center;
-  font-weight: 600;
-  color: #24292e;
   margin-bottom: 68px;
 }
 .works-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 23px 29.8px ;
+  gap: 23px 29.8px;
 }
 .works-items img {
+  width: 100%;
+}
+
+/* news */
+#news {
+  margin: 0 auto;
+}
+.news-title {
+  margin-bottom: 65px;
+}
+.news-list {
+  font-size: 14.4px;
+  line-height: 22px;
+}
+.news-list li {
+  display: flex;
+  padding: 15px 0;
+  border-top: 1px solid #c8c8c8;
+}
+.news-list li:last-child {
+  border-bottom: 1px solid #c8c8c8;
+}
+.news-list li time {
+  width: 165px;
+  margin-left: 15px;
+}
+
+/* contact */
+#contact {
+  margin: 130px auto 150px;
+}
+.contact-title {
+  margin-bottom: 65px;
+}
+.contact-form-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.4px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+input,
+textarea {
+  border: 1px solid #c8c8c8;
+  width: 85%;
+}
+.contact-form-row input {
+  height: 44px;
+}
+.contact-form-row textarea {
+  height: 166px;
+}
+.contact-button {
+  display: block;
+  margin: 30px auto 0;
+  color: #fff;
+  background-color: #24292e;
+  padding: 15px 85px;
+}
+
+footer {
+  background-color: #24292e;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 20px 4% 10px;
+    gap: 10px;
+  }
+  .mv img {
+    height: auto;
+  }
+  .works-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .news-list li {
+    flex-direction: column;
     width: 100%;
+  }
+  .news-list li time {
+    margin-left: 0;
+  }
+  .contact-form-row {
+    flex-direction: column;
+  }
+  .contact-form-row input,
+  .contact-form-row textarea {
+    width: 100%;
+  }
 }
